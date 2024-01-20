@@ -41,7 +41,7 @@ In-case, there is need to download dataset then use either of the given links.
 If you wnat to download MovieLens dataset hosted on Kaggle then use [this link](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset).
 If you want to download MovieLens dataset from its official website then use [this link](https://grouplens.org/datasets/movielens/latest/)
 
-> [!Dependencies]
+ [Dependencies]
 
 > Python >=3.5
 > pandas
