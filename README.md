@@ -1,5 +1,5 @@
 # Movie-Recommendation-System
-Developed a hybrid movie recommendation system by combining content-based and collaborative filtering using Singular Value Decomposition (SVD).
+A hybrid movie recommendation system by combining content-based and collaborative filtering using Singular Value Decomposition (SVD).
 
 This repository contains the code for building movie recommendation engine.
 
