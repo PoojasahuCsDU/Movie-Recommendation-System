@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)]()
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)]()
+[![License](https://img.shields.io/badge/License-MIT-green)]()
 
 ## 📘 Overview
 This project builds a **Hybrid Movie Recommendation System** that combines **Content-Based Filtering** and **Collaborative Filtering** to provide personalized movie suggestions.
@@ -16,7 +17,7 @@ data preprocessing → feature extraction → model building → evaluation → 
 - **Collaborative Filtering:** Uses **Singular Value Decomposition (SVD)** via the Surprise library to learn user–item interactions.  
 - **Hybrid Approach:** Merges both models to recommend movies most relevant to each user.  
 - **Evaluation Metrics:** RMSE (< 1), Precision@K, Recall@K.  
-- **Dataset:** [MovieLens Dataset](https://grouplens.org/datasets/movielens/latest/) & TMDB metadata (≈ 45 000 movies).
+- **Dataset:** [MovieLens Dataset](https://grouplens.org/datasets/movielens/latest/) & TMDB metadata (≈ 45,000 movies).
 
 ---
 
@@ -33,10 +34,10 @@ data preprocessing → feature extraction → model building → evaluation → 
 ## 📂 Dataset Description
 | File | Description |
 |------|--------------|
-| `movies_metadata.csv` | 45 000 movies — titles, genres, plots, release dates, ratings |
+| `movies_metadata.csv` | 45,000 movies — titles, genres, plots, release dates, ratings |
 | `keywords.csv` | Plot keywords (JSON format) |
 | `credits.csv` | Cast and Crew information |
-| `ratings_small.csv` | 100 000 ratings from 700 users |
+| `ratings_small.csv` | 100,000 ratings from 700 users |
 
 ---
 
@@ -46,6 +47,21 @@ data preprocessing → feature extraction → model building → evaluation → 
 - **SVD (Singular Value Decomposition)**  
 - **Hybrid Weighted Scoring**  
 - **Python Libraries:** pandas, numpy, scikit-learn, surprise, matplotlib, seaborn  
+
+---
+
+## 🧩 Related Work & References
+This project’s design was inspired by academic research on hybrid recommendation systems and matrix factorization methods:
+
+1. **“Movie Recommendation Systems Using Actor-Based Matrix Computations in South Korea”**  
+   *IEEE Xplore, 2022* — [https://ieeexplore.ieee.org/document/9566476](https://ieeexplore.ieee.org/document/9566476)  
+   → This paper introduced a content-based approach utilizing actor, director, genre, and plot metadata, influencing the metadata fusion techniques in this project.
+
+2. **“Movie Recommendation System Based on SVD Collaborative Filtering”**  
+   *IEEE Xplore, 2023* — [https://ieeexplore.ieee.org/document/10104401](https://ieeexplore.ieee.org/document/10104401)  
+   → This paper demonstrated that **SVD (Singular Value Decomposition)** performs effectively in sparse datasets. I applied the same concept using the Surprise library for collaborative filtering.
+
+By studying these papers, I gained a deeper understanding of hybrid recommender architectures and adapted their core concepts into a practical implementation.
 
 ---
 
