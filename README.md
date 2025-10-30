@@ -2,7 +2,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)]()
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)]()
-[![License](https://img.shields.io/badge/License-MIT-green)]()
 
 ## 📘 Overview
 This project builds a **Hybrid Movie Recommendation System** that combines **Content-Based Filtering** and **Collaborative Filtering** to provide personalized movie suggestions.
